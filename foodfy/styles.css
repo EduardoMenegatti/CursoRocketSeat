@@ -1,0 +1,224 @@
+/*====GERAL====*/
+
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.links{
+    margin-top: 36.1px;
+    margin-bottom: 30px;
+    color: black;
+}
+.links a#logo{
+    margin-left: 231px;  
+    width: 90.6px;
+    height: 26.9px;
+}
+.links a#about{
+    text-decoration: none;
+    padding-left: 122.4px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 38px;
+    color: black;
+}
+.links a#recipe{
+    text-decoration: none;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 38px;
+    color: black;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: rgba(153,153,153,1);
+     background-color: rgba(238,238,238,1);
+     text-align: center;
+ }
+ .footer p{
+     font-size: 14px; 
+     padding: 15px; 
+ }
+
+/*====INDEX====*/
+.capa{
+    margin-left: 231px;
+    width: 940px;
+    background: #FBDFDB;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-areas: 
+    "a c"
+    "b c";
+}
+.capa h1 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38px;
+    max-width: 305px;
+    margin: 117px 0 10px 60px;
+    grid-area: a;
+}
+.capa p {
+    margin: 10px 0 117px 60px;
+    max-width: 316px;
+    text-align: justify;
+    font-size: 18px;
+    opacity: 0.7;
+    line-height: 28px;
+    grid-area: b;
+}
+.capa img{
+    width: 216px;
+    height: 300px;
+    grid-area: c;
+    margin: 66px 100px 0 248px;
+}
+.initial h1{
+    margin: 50px 0 20px 230px;
+    font-size: 24px;
+    font-weight: 800;
+}
+.cards{
+    margin: 20px 0 0 230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    width: 940px;
+}
+.cards .card img{
+    width: 100%;
+    border-radius: 15px;
+}
+.cards .card h1{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+.cards .card p{
+    font-weight: normal;
+    font-size: 14px;
+    color: #777777;
+    margin: 5px 0 30px;
+}
+
+/*====ABOUT====*/
+.texto{
+    max-width: 67.1%;
+    text-align: left;
+    margin: 4.6% 0 30px 230px;
+
+}
+.texto h1{
+    font-size: 24px;
+    margin-bottom: 1.8%;
+}
+.texto p#para1{
+    font-size: 18px;
+    margin-bottom: 28px;
+}  
+.texto p#para2{
+    font-size: 18px;
+    margin-bottom: 28px;
+}  
+.texto h2{
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+.texto p#para3{
+    font-size: 18px;
+    margin-bottom: 28px;
+}  
+.texto p#para4{
+    font-size: 18px;
+    margin-bottom: 28px;
+} 
+.texto p#para5{
+    font-size: 18px;
+}  
+
+/*=====RECEITAS====*/
+.cardsR{
+    width: 940px;
+    margin: 20px 30px 30px 230px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;  
+}
+.cardR{
+    margin: 10px auto;
+}
+.card-image img{
+    width: 100%;
+    border-radius: 15px;
+}
+.card-info .titulo{
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+}
+.card-info p{
+    font-size: 14px;
+    color: #777777;
+}
+
+/*====MODAL=====*/
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal{
+    background-color: white;
+    width: 660px;
+    height: 413px;
+    border-radius: 16px;
+    margin: 15vh auto;
+    position: relative;
+}
+.modal .close-modal p{
+    color: #999999;
+    position: absolute;
+    margin: 0 0 15px 280px;
+    bottom: 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/*====MODAL.ACTIVE=====*/
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay img{
+    margin: 30px;
+    width: 90%;
+    height: 220px;
+    border-radius: 15px;
+}
+.card-info .titulo{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+
+}
+
+
