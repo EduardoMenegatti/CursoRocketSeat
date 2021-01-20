@@ -1,0 +1,191 @@
+@import'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap';
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.links{
+    text-align: left;
+    margin: 36.1px 122.4px 30px 230px;
+}
+
+.links img{
+    width: 90.6px;
+    height: 26.9px;
+
+}
+
+.links a{
+    color: black;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 20px 10px 10px 60px;
+    text-decoration: none;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 316px;
+    text-align: center;
+    background-color: #FBDFDB;;
+    border-radius: 30px;
+    width: 940px;
+    height: 366px;
+    margin-left: 230px;
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 117px;
+    margin-left: 60px;
+    max-width: 316px;
+    font-size: 32px;
+}
+.one h3{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 28px;
+    font-size: 18px;
+    opacity: .7;
+    max-width: 316px;
+
+}
+.two{
+    grid-column: 2;
+    grid-row: 1;
+}
+.two img{
+    margin: auto 100px 0px;
+}
+.three{
+    grid-column: 2;
+    grid-row: 1/2;
+}
+.item{
+    font-size: 24px;
+    line-height: 28px;
+    margin: 50px 230px 20px;
+}
+
+/*=== MENU ===*/
+
+.menus{
+    max-width: 940px;
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.menu__image-container img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+}
+.menu__content h3{
+    margin-top:20px;
+    font-size:18px;
+}
+.menu__content p{
+    font-size: 14px;
+    opacity: 0.7;
+}
+.footer{
+    margin-top: 40px;
+    opacity: 0.6;
+    width: 100%;
+    height: 62px;
+    background: #EEEEEE;
+}
+.footer p{
+    text-align: center;
+    padding:  23px;
+    font-size: 14px;
+}
+
+/*===SOBRE==*/
+
+.descricao{
+    margin: auto 230px;
+    width: 940px;
+}
+.descricao .titulo0{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.descricao p{
+    margin-bottom: 12px;
+    line-height: 20px;
+
+}
+
+.comeco{
+    padding: 20px 0 ;
+    margin: auto 100px;
+}
+.comeco h2{
+    margin-bottom: 20px;
+}
+.comeco p{
+    margin-bottom: 12px;
+    line-height: 20px;
+}
+
+.nossas{
+    padding: 20px 0 ;
+    margin: auto 100px;
+}
+.nossas h2{
+    margin-bottom: 20px;
+}
+.nossas p{
+    margin-bottom: 12px;
+    line-height: 20px;
+}
+
+/*===MODAL===*/
+
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    width: 660px;
+    height: 413px;
+    margin: 7vh auto;
+    border-radius: 15px;
+    position: relative;
+}
+.modal .close-modal {
+    opacity: 50%;
+    position: absolute;
+    bottom: 8px;
+    left: 300px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+/*===MODAL.ACTIVE==*/
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
