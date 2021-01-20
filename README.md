@@ -1,4 +1,4 @@
-#Itens de aprendizado:
+# Itens de aprendizado:
 - GITHUB
 - [X] Criar projetos com pontos de história.
 - [x] Verificação de updates no projeto e resgate de atividades realizadas.
