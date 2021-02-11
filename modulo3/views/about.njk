@@ -7,19 +7,17 @@
 {% block content %}
 
     <div id="wrapper">
-        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFdyxT51d8UuQ/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=P56ksHB_padnvkRSEC1eLV867Ri68z-CzZkxinAtwZU"
-            alt="Jac">
-        <h1>Jacqueline M. G. Marques</h1>
-        <h2>Cientista de Alimentos</h2>
-        <h3>Focada em gerenciamento e produção de alimentos com as boas práticas </h3>
-        <p>Formada na Gloriosa: <a href="https://www.esalq.usp.br" target="_blank">ESALQ</a></p>
-
+        <img src="{{about.avatar_url}}" alt="imagem de " srcset="">
+        <h1>{{about.name}}</h1>
+        <h2>{{about.role}}</h2>
+        <h3>{{about.description}}</h3>
     </div>
 
     <div id="links-footer" class="links">
-        <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4223048U7"
-            target="_blank">Lattes</a>
-        <a href="https://www.instagram.com/jacquelinegerageconsultoria/?hl=pt-br" target="_blank">Instagram</a>
+        {% for link in about.links %}
+            <a href="{{link.url}}" target= "_blank">{{link.name}}</a>
+        {% endfor %}
+        
     </div>
 
 {% endblock %}
